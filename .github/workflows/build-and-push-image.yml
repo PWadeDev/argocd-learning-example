@@ -36,8 +36,8 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./src/dockerfile
+          file: ./src/Dockerfile
           push: true
           platforms: linux/arm64
-          tags: pawad/gitops-k8s-deployments:v1.0.0        
+          tags: pawad/gitops-k8s-deployments:v1.0.1        
           labels: ${{ steps.meta.outputs.labels }}
